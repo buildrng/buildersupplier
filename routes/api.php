@@ -110,7 +110,7 @@ Route::prefix('/v1')->group(function () {
     Route::get('settings/getDefaultWeb', [SettingsController::class, 'getDefaultWeb']);
     Route::post('settings/getByLanguageIdWeb', [SettingsController::class, 'getByLanguageIdWeb']);
 
-    Route::post('home/searchWithCity', [ProductsController::class, 'searchWithCity']);
+    Route::post('home/searchWithCity/{sector?}', [ProductsController::class, 'searchWithCity']);
     Route::post('home/searchWithZipCode', [ProductsController::class, 'searchWithZipCode']);
     Route::post('home/searchWithGeoLocation', [ProductsController::class, 'searchWithGeoLocation']);
     Route::post('home/searchStoreWithCity', [ProductsController::class, 'searchStoreWithCity']);

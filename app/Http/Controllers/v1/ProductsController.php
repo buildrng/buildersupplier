@@ -720,7 +720,7 @@ class ProductsController extends Controller
         return response()->json($response, 200);
     }
 
-    public function searchWithCity(ProductsSearchByCityRequest $request)
+    public function searchWithCity(ProductsSearchByCityRequest $request, $sector = 'personal')
     {
         $today = Carbon::now();
         $cid = $request->id;
@@ -732,7 +732,7 @@ class ProductsController extends Controller
         if (count($stores)) {
             $storeIds = $stores->pluck('uid')->toArray();
             $banners = Banners::where(['status' => 1, 'city_id' => $cid])->whereDate('from', '<=', $today)->whereDate('to', '>=', $today)->get();
-            $category = Subcategory::where('status', 1)->limit(7)->get();
+            $category = Subcategory::where('status', 1)->where('sector', $sector)->limit(7)->orderBy('order')->get();
             $homeProducts = Products::where(['status' => 1, 'in_home' => 1])
             ->where('rating', '>', 0)
             // ->WhereIn('store_id', $storeIds)

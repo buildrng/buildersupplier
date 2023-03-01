@@ -23,7 +23,7 @@ class SubcategoriesTableSeeder extends Seeder
             'slug' => 'mixed',
             'cate_id' => 1,
             'sector' => 'personal',
-            'order' => 0,
+            'order' => 18,
             'status' => 1
         ]);
 
