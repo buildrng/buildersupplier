@@ -109,7 +109,7 @@ export default function ProductPopup() {
 							</div>
 							{discount && (
 								<del class="font-segoe text-gray-400 text-base lg:text-xl ps-2.5 -mt-0.5 md:mt-0">
-									{basePrice}
+									<span x-text=""product.original_price></span>
 								</del>
 							)}
 						</div>

@@ -34,7 +34,7 @@ const SearchProduct: React.FC<SearchProductProps> = ({ item }) => {
 				<h3 class="truncate text-sm text-heading mb-2">{item.name}</h3>
 				<div class="text-heading font-semibold text-sm">
 					{price}
-					<del class="ps-2 text-gray-400 font-normal">{basePrice}</del>
+					<del class="ps-2 text-gray-400 font-normal"><span x-text=""product.original_price></span></del>
 				</div>
 			</div>
 		</Link>

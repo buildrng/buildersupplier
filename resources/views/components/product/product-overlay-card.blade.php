@@ -69,7 +69,7 @@ const ProductOverlayCard: React.FC<ProductProps> = ({
     >
       <div
         class="flex justify-center items-center p-4 h-full 3xl:min-h-[330px]"
-        title={product?.name}
+        title=<span x-text="product.name"></span>
       >
         <Image
           src={
@@ -78,7 +78,7 @@ const ProductOverlayCard: React.FC<ProductProps> = ({
           }
           width={size}
           height={size}
-          loading={imgLoading}
+          loading=eager
           alt={product?.name || 'Product Image'}
           class="transition duration-500 ease-in-out transform group-hover:scale-110"
         />
@@ -91,20 +91,20 @@ const ProductOverlayCard: React.FC<ProductProps> = ({
 
       <div
         class="flex flex-col md:flex-row lg:flex-col 2xl:flex-row md:justify-between md:items-center lg:items-start 2xl:items-center w-full px-4 md:px-5 3xl:px-7 pb-4 md:pb-5 3xl:pb-7"
-        title={product?.name}
+        title=<span x-text="product.name"></span>
       >
         <div class="md:pe-2 lg:pe-0 2xl:pe-2 overflow-hidden">
           <h2 class="text-heading font-semibold text-sm md:text-base xl:text-lg mb-1 truncate">
-            {product?.name}
+            <span x-text="product.name"></span>
           </h2>
           <p class="text-body text-xs xl:text-sm leading-normal xl:leading-relaxed truncate max-w-[250px]">
-            {product?.description}
+            <span x-text="product.description"></span>
           </p>
         </div>
         <div class="flex-shrink-0 flex flex-row-reverse md:flex-col lg:flex-row-reverse 2xl:flex-col items-center md:items-end lg:items-start 2xl:items-end justify-end md:text-end lg:text-start xl:text-end mt-2 md:-mt-0.5 lg:mt-2 2xl:-mt-0.5">
           {discount && (
             <del class="text-sm md:text-base lg:text-sm xl:text-base 3xl:text-lg">
-              {basePrice}
+              <span x-text=""product.original_price></span>
             </del>
           )}
           <div class="text-heading font-segoe font-semibold text-base md:text-xl lg:text-base xl:text-xl 3xl:text-2xl 3xl:mt-0.5 pe-2 md:pe-0 lg:pe-2 2xl:pe-0">

@@ -733,17 +733,9 @@ class ProductsController extends Controller
             $storeIds = $stores->pluck('uid')->toArray();
             $banners = Banners::where(['status' => 1, 'city_id' => $cid])->whereDate('from', '<=', $today)->whereDate('to', '>=', $today)->get();
             $category = Subcategory::where('status', 1)->where('sector', $sector)->limit(7)->orderBy('order')->get();
-            $homeProducts = Products::where(['status' => 1, 'in_home' => 1])
-            ->where('rating', '>', 0)
-            // ->WhereIn('store_id', $storeIds)
-            ->limit(15)->get();
-            $topProducts = Products::where(['status' => 1, 'in_home' => 1])
-            ->WhereIn('store_id', $storeIds)
-            ->orderBy('rating', 'desc')->limit(15)->get();
-            $inOffers = Products::where('status', 1)->where('discount', '>', 0)
-            // ->WhereIn('store_id', $storeIds)
-            ->orderBy('discount', 'desc')
-            ->limit(15)->get();
+            $homeProducts = Products::where(['status' => 1, 'in_home' => 1])->where('rating', '>', 0)->limit(15)->get(); // ->WhereIn('store_id', $storeIds)
+            $topProducts = Products::where(['status' => 1, 'in_home' => 1])->orderBy('rating', 'desc')->limit(15)->get(); //->WhereIn('store_id', $storeIds)
+            $inOffers = Products::where('status', 1)->where('discount', '>', 0)->orderBy('discount', 'desc')->limit(15)->get();// ->WhereIn('store_id', $storeIds)
             $city = Cities::where('id', $cid)->first();
             foreach ($category as $loop) {
                 $loop->subCates = SubCategory::where(['status' => 1, 'cate_id' => $loop->id])->get();

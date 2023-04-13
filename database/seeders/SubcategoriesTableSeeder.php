@@ -219,6 +219,76 @@ class SubcategoriesTableSeeder extends Seeder
         ]);
 
         SubCategory::create([
+            'name' => 'Post weds',
+            'slug' => 'post-weds',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 18,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Kitchen',
+            'slug' => 'kitchen',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Bath-rooms',
+            'slug' => 'bathrooms',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Bed-rooms',
+            'slug' => 'bedrooms',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Living-rooms',
+            'slug' => 'livingrooms',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Personal Houses',
+            'slug' => 'personalhouses',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
+            'name' => 'Public buildings',
+            'slug' => 'publicbuildings',
+            // 'cover' => 'categories/discount.jpg',
+            'cate_id' => 11,
+            'sector' => 'personal',
+            'order' => 17,
+            'status' => 1
+        ]);
+
+        SubCategory::create([
             'name' => 'Mixed',
             'slug' => 'mixed',
             // 'cover' => 'categories/concrete.jpg',
@@ -271,7 +341,28 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Roller Vehicles',
             // 'cover' => 'categories/',
+            'slug' => 'rollervehicles',
             'cate_id' => 15, // rentables
+            'order' => 6,
+            'sector' => 'industrial',
+            'status' => 1
+        ]);
+        
+        SubCategory::create([
+            'name' => 'Roads',
+            // 'cover' => 'categories/',
+            'slug' => 'roads',
+            'cate_id' => 22, // usecases
+            'order' => 6,
+            'sector' => 'industrial',
+            'status' => 1
+        ]);
+        
+        SubCategory::create([
+            'name' => 'Bridges',
+            // 'cover' => 'categories/',
+            'slug' => 'bridges',
+            'cate_id' => 22, // usecases
             'order' => 6,
             'sector' => 'industrial',
             'status' => 1

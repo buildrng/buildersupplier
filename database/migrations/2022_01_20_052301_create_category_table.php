@@ -16,8 +16,8 @@ class CreateCategoryTable extends Migration
         Schema::create('category', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->nullable();
-            $table->enum('sector', ['personal', 'industrial'])->default('personal');
+            $table->string('slug')->unique()->nullable();
+            $table->enum('sector', ['personal', 'industrial', 'wholesales'])->default('personal');
             $table->string('cover')->nullable();
             $table->tinyInteger('order')->default(0);
             $table->tinyInteger('status')->default(1);

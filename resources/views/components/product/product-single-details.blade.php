@@ -142,7 +142,7 @@ const ProductSingleDetails: React.FC = () => {
 						</div>
 						{discount && (
 							<span class="line-through font-segoe text-gray-400 text-sm md:text-base lg:text-lg xl:text-xl ps-2">
-								{basePrice}
+								<span x-text=""product.original_price></span>
 							</span>
 						)}
 					</div>
