@@ -14,7 +14,7 @@
 </head>
 <body class="flex flex-col min-h-screen" style="-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%">
 	<x-layout.header.header />
-	<main class="relative flex-grow pt-5" style="min-height: -webkit-fill-available; -webkit-overflow-scrolling: touch">
+	<main class="relative flex-grow" style="min-height: -webkit-fill-available; -webkit-overflow-scrolling: touch">
 		{{$slot}}
 	</main>
 	<footer>
