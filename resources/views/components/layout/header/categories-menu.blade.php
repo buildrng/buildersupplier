@@ -2,7 +2,7 @@
 			<div class="flex items-center">
                 <x-layout.header.allcategories-menu />
 				</div>
-				<nav class="headerMenu flex w-full relative hidden lg:flex ps-3.5 xl:ps-5">
+				<nav class="headerMenu flex w-full relative lg:flex ps-3.5 xl:ps-5">
                     <x-layout.header.categories />
 				</nav>
 			</div>

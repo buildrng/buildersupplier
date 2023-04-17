@@ -1,12 +1,12 @@
 <div class="menuItem group cursor-pointer py-7 relative">
-    <div x-data="{ categories: null, isLoading: false}" x-init="this.isLoading = true; fetch('/api/v1/category/getHome/').then((response) => response.json()).then((response) => (this.categories = response.data)).catch((err) => console.log(err));">
-    <div x-data="console.log(categories)"></div>
-        <template x-for="category in categories">
+        <div x-data="getcategories()">
+        <span x-data="console.log(categories)"></span>
+        {{-- <template x-for="category in categories">
             <a class="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4 group-hover:text-black"
             x-href="'/'+category.slug>
                 <span x-text="category.name"></span>
             </a>
-        </template>
+        </template> --}}
     </div>
     {{-- <a class="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4 group-hover:text-black"
         href="/">Pages<span class="opacity-30 text-xs mt-1 xl:mt-0.5 w-4 flex justify-end">

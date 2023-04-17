@@ -14,6 +14,7 @@ class AdminUsersTableSeeder extends Seeder
      */
     public function run()
     {
+        User::truncate();
         // Add Admins
 
         User::create([

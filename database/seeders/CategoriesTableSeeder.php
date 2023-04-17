@@ -103,21 +103,21 @@ class CategoriesTableSeeder extends Seeder
         ]);
 
         // 10
-        Category::create([
-            'name' => 'Discounts',
-            'slug' => 'discounts',
-            'sector' => 'personal',
-            'order' => 10,
-            'status' => 1
-        ]);
+        // Category::create([
+        //     'name' => 'Discounts',
+        //     'slug' => 'discounts',
+        //     'sector' => 'personal',
+        //     'order' => 10,
+        //     'status' => 1
+        // ]);
 
-        Category::create([
-            'name' => 'Use Cases',
-            'slug' => 'use-case',
-            'sector' => 'personal',
-            'order' => 10,
-            'status' => 1
-        ]);
+        // Category::create([
+        //     'name' => 'Use Cases',
+        //     'slug' => 'use-case',
+        //     'sector' => 'personal',
+        //     'order' => 10,
+        //     'status' => 1
+        // ]);
 
         Category::create([
             'name' => 'Concrete',
@@ -256,12 +256,12 @@ class CategoriesTableSeeder extends Seeder
             'status' => 1
         ]);
 
-        Category::create([
-            'name' => 'Use Cases',
-            'slug' => 'use-case-industrial',
-            'sector' => 'industrial',
-            'order' => 6,
-            'status' => 1
-        ]);
+        // Category::create([
+        //     'name' => 'Use Cases',
+        //     'slug' => 'use-case-industrial',
+        //     'sector' => 'industrial',
+        //     'order' => 6,
+        //     'status' => 1
+        // ]);
     }
 }

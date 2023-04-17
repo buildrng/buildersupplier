@@ -1,18 +1,22 @@
-<div class="!md:mb-14 !xl:mb-[60px] relative mx-auto mb-5 !mb-12 max-w-[1920px] md:mb-8">
-	<div class="full pagination-left relative mx-0">
-		<div class="horizontal pointer" dir="">
-            <div class="wrapper" style="transform: translate3d(-6125px, 0px, 0px); transition-duration: 300ms;">
-				<div class="carouselItem">
+{{-- <div class="!md:mb-14 !xl:mb-[60px] relative mx-auto mb-5 !mb-12 max-w-[1920px] md:mb-8"> --}}
+<div class="">
+	<div class="pagination-left relative mx-0">
+		{{-- <div class="horizontal pointer" dir=""> --}}
+		<div class="horizontal pointer">
+			{{-- <div class="wrapper" style="transform: translate3d(-6125px, 0px, 0px); transition-duration: 300ms;"> --}}
+			<div class="wrapper" style="">
+			<div class="carouselItem">
 						<div class="mx-auto">
 							<a class="group relative flex justify-center" href="/">
-								{{-- <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"> --}}
-									{{-- <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
-										<img src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%271920%27%20height=%27900%27/%3e" alt="" aria-hidden="true" style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0">
-									</span> --}}
-									{{-- <img class="w-full bg-gray-300 object-cover" data-nimg="intrinsic" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" decoding="async"> --}}
-									<noscript>
-										<img class="w-full bg-gray-300 object-cover" data-nimg="intrinsic" {{-- srcSet=" 2x" --}} src="/assets/images/banners/banner-01.jpg" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" decoding="async" loading="lazy" />
-									</noscript>
+								<span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
+									<span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+										<img src="assets/images/banners/banner-01.jpg" alt="" aria-hidden="true" style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0">
+									</span>
+									{{-- <img class="w-full bg-gray-300 object-cover" src="/assets/images/banners/banner-01.jpg" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" decoding="async"> --}}
+									{{-- <noscript>
+										{{-- <img class="w-full bg-gray-300 object-cover" src="/assets/images/banners/banner-01.jpg" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+										<img class="w-full abs bg-gray-300 object-cover" src="/assets/images/banners/banner-01.jpg" alt="" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+									</noscript> --}}
 								{{-- </span> --}}
 							</a>
 						</div>
