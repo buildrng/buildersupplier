@@ -7,11 +7,12 @@
 			<div class="wrapper" style="">
 			<div class="carouselItem">
 						<div class="mx-auto">
+							<template x-for="banner in home.banners">
 							<a class="group relative flex justify-center" href="/">
 								<span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
 									<span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
-										<img src="assets/images/banners/banner-01.jpg" alt="" aria-hidden="true" style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0">
-									</span>
+										<img :src="banner.cover" :alt="banner.message" aria-hidden="true" style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0">
+								</span>
 									{{-- <img class="w-full bg-gray-300 object-cover" src="/assets/images/banners/banner-01.jpg" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" decoding="async"> --}}
 									{{-- <noscript>
 										{{-- <img class="w-full bg-gray-300 object-cover" src="/assets/images/banners/banner-01.jpg" alt="We picked every item with care you must try" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
@@ -19,6 +20,7 @@
 									</noscript> --}}
 								{{-- </span> --}}
 							</a>
+						</template>
 						</div>
 					</div>
 				</div>
