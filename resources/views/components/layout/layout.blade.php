@@ -25,6 +25,7 @@
 				<nav class="headerMenu flex w-full relative lg:flex ps-3.5 xl:ps-5">
                     <div class="menuItem group cursor-pointer py-7 relative">
                         <div x-init="categories = get('category/getHome/', this.categories)">
+                            {{-- <div x-data="console.log(categories)"></div> --}}
                             <template x-for="category in await categories">
                                 <a class="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4 group-hover:text-black"
                                 :href="'/categories/'+category.slug">
