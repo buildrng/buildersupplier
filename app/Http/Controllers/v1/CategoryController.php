@@ -208,13 +208,18 @@ class CategoryController extends Controller
     }
 
     public function getHome(CategoriesRequest $request, string $sector = 'personal'){
-        $category = Category::where('status',1)->where('sector', $sector)->get();
-        foreach($category as $loop){
-            $loop->subCates = SubCategory::where(['status'=>1,'cate_id'=>$loop->id])->get();
-        }
+        $category = Category::where('status',1)->where('sector', $sector)->limit(9)->get();
+        $subcategory = SubCategory::where('status',1)->where('sector', $sector)->limit(9)->get();
+        // foreach($category as $loop){
+        //     $loop->subCates = SubCategory::where(['status'=>1,'cate_id'=>$loop->id])->get();
+        // }
+        $data = [
+            'category' => $category,
+            'sub-categories' => $subcategory,
+        ];
 
         $response = [
-            'data'=>$category,
+            'data'=>$data,
             'success' => true,
             'status' => 200,
         ];

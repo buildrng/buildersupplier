@@ -23,8 +23,8 @@
                     <x-layout.header.allcategories-menu />
 				</div>
 				<nav class="headerMenu flex w-full relative lg:flex ps-3.5 xl:ps-5">
-                    <div class="menuItem group cursor-pointer py-7 relative" x-data="{categories: []}" x-init="fetch('/api/v1/category/getHome/', { method: 'get', headers: {'Accept': 'application/json','Content-Type': 'application/json'}}).then((response) => response.json()).then((response) => categories = response.data).catch((err) => console.log(err))">
-                            <template x-for="category in categories">
+                    <div class="menuItem group cursor-pointer py-7 relative" x-data="{ Menu: []}" x-init="fetch('/api/v1/category/getHome/', { method: 'get', headers: {'Accept': 'application/json','Content-Type': 'application/json'}}).then((response) => response.json()).then((response) => Menu = response.data).catch((err) => console.log(err))">
+                            <template x-for="category in Menu.category">
                                 <a class="relative inline-flex items-center px-3 py-2 text-sm font-normal xl:text-base text-heading xl:px-4" :href="'/category/'+category.slug">
                                     <span x-text="category.name"></span>
                                 </a>

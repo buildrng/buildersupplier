@@ -109,22 +109,22 @@ class CategoriesTableSeeder extends Seeder
         ]);
 
         // 10
-        // Category::create([
-        //     'name' => 'Discounts',
-        //     'slug' => 'discounts',
-        //     'sector' => 'personal',
-        //      'cover' => 'discounts.jpg',
-        //     'order' => 10,
-        //     'status' => 1
-        // ]);
+        Category::create([
+            'name' => 'Discounts',
+            'slug' => 'discounts',
+            'sector' => 'personal',
+            'cover' => 'discounts.jpg',
+            'order' => 10,
+            'status' => 1
+        ]);
 
-        // Category::create([
-        //     'name' => 'Use Cases',
-        //     'slug' => 'use-case',
-        //     'sector' => 'personal',
-        //     'order' => 10,
-        //     'status' => 1
-        // ]);
+        Category::create([
+            'name' => 'Use Cases',
+            'slug' => 'use-case',
+            'sector' => 'personal',
+            'order' => 11,
+            'status' => 1
+        ]);
 
         Category::create([
             'name' => 'Concrete',

@@ -18,7 +18,7 @@ return [
         'banner_caption_2' => '',
         'banner_caption_3' => '',
         'banner_caption_4t' => '',
-        'shop_by_category' => 'Shop By Category',
+        'shop_by_category' => 'Shop By Other Categories',
         'stores_near_you' => 'Stores Near You',
         'home_products' => 'Lowered Product Prices',
         'top_products' => 'Popular Products',

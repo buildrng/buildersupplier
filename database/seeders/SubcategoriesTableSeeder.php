@@ -19,8 +19,9 @@ class SubcategoriesTableSeeder extends Seeder
         // Add SubCategory
 
         SubCategory::create([
-            'name' => 'Mixed',
+            'name' => 'Mixed Concrete',
             'slug' => 'mixed',
+            'cover' => 'mixed.jpg',
             'cate_id' => 1,
             'sector' => 'personal',
             'order' => 18,
@@ -30,7 +31,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Cement',
             'slug' => 'cement',
-            // 'cover' => 'categories/cement.jpg',
+            'cover' => 'cement.jpg',
             'cate_id' => 1,
             'sector' => 'personal',
             'order' => 1,
@@ -40,7 +41,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Sands',
             'slug' => 'sands',
-            // 'cover' => 'categories/sand.jpg',
+            'cover' => 'sand.jpg',
             'cate_id' => 1,
             'sector' => 'personal',
             'order' => 2,
@@ -50,7 +51,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Blocks',
             'slug' => 'blocks',
-            // 'cover' => 'categories/block.jpg',
+            'cover' => 'block.jpg',
             'cate_id' => 1,
             'sector' => 'personal',
             'order' => 3,
@@ -60,7 +61,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Scafoldings',
             'slug' => 'scafoldings',
-            // 'cover' => 'categories/scafold.jpg',
+            'cover' => 'scafold.jpg',
             'cate_id' => 2,
             'sector' => 'personal',
             'order' => 4,
@@ -70,7 +71,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Woods',
             'slug' => 'woods',
-            // 'cover' => 'categories/wood.jpg',
+            'cover' => 'wood.jpg',
             'cate_id' => 3,
             'sector' => 'personal',
             'order' => 5,
@@ -81,7 +82,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Roofings',
             'slug' => 'roofings',
-            // 'cover' => 'categories/roof.jpg',
+            'cover' => 'roof.jpg',
             'cate_id' => 4,
             'sector' => 'personal',
             'order' => 6,
@@ -91,7 +92,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Irons',
             'slug' => 'irons',
-            // 'cover' => 'categories/iron.jpg',
+            'cover' => 'iron.jpg',
             'cate_id' => 5,
             'sector' => 'personal',
             'order' => 6,
@@ -101,7 +102,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Nails',
             'slug' => 'nails',
-            // 'cover' => 'categories/nail.jpg',
+            'cover' => 'nail.jpg',
             'cate_id' => 5,
             'sector' => 'personal',
             'order' => 7,
@@ -111,7 +112,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Screws',
             'slug' => 'screws',
-            // 'cover' => 'categories/screw.jpg',
+            'cover' => 'screw.jpg',
             'cate_id' => 5,
             'sector' => 'personal',
             'order' => 8,
@@ -121,7 +122,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Steels',
             'slug' => 'steels',
-            // 'cover' => 'categories/steel.jpg',
+            'cover' => 'steel.jpg',
             'cate_id' => 5,
             'sector' => 'personal',
             'order' => 9,
@@ -129,9 +130,9 @@ class SubcategoriesTableSeeder extends Seeder
         ]);
 
         SubCategory::create([
-            'name' => 'Ceremics',
-            'slug' => 'ceremics',
-            // 'cover' => 'categories/ceramic.jpg',
+            'name' => 'Ceramics',
+            'slug' => 'ceramics',
+            'cover' => 'ceramic.jpg',
             'cate_id' => 6,
             'sector' => 'personal',
             'order' => 10,
@@ -141,7 +142,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Stones',
             'slug' => 'stones',
-            // 'cover' => 'categories/stone.jpg',
+            'cover' => 'stone.jpg',
             'cate_id' => 7,
             'sector' => 'personal',
             'order' => 11,
@@ -151,7 +152,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Electricals',
             'slug' => 'electricals',
-            // 'cover' => 'categories/electrical.jpg',
+            'cover' => 'electrical.jpg',
             'cate_id' => 8,
             'sector' => 'personal',
             'order' => 12,
@@ -161,7 +162,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Solars',
             'slug' => 'solars',
-            // 'cover' => 'categories/solar.jpg',
+            'cover' => 'solar.jpg',
             'cate_id' => 8,
             'sector' => 'personal',
             'order' => 13,
@@ -171,7 +172,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Bins',
             'slug' => 'bins',
-            // 'cover' => 'categories/bin.jpg',
+            'cover' => 'bin.jpg',
             'cate_id' => 9,
             'sector' => 'personal',
             'order' => 14,
@@ -181,7 +182,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Toilets',
             'slug' => 'toilets',
-            // 'cover' => 'categories/toilets.jpg',
+            'cover' => 'toilets.jpg',
             'cate_id' => 9,
             'sector' => 'personal',
             'order' => 15,
@@ -189,19 +190,9 @@ class SubcategoriesTableSeeder extends Seeder
         ]);
 
         SubCategory::create([
-            'name' => 'Mixers',
-            'slug' => 'mixers',
-            // 'cover' => 'categories/mixer.jpg',
-            'cate_id' => 9,
-            'sector' => 'personal',
-            'order' => 16,
-            'status' => 1
-        ]);
-
-        SubCategory::create([
             'name' => 'Brands',
             'slug' => 'brands',
-            // 'cover' => 'categories/brand.jpg',
+            // 'cover' => 'brand.jpg',
             'cate_id' => 10,
             'sector' => 'personal',
             'order' => 16,
@@ -211,7 +202,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Discounts',
             'slug' => 'discounts',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 10,
             'sector' => 'personal',
             'order' => 17,
@@ -221,7 +212,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Post weds',
             'slug' => 'post-weds',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 18,
@@ -231,7 +222,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Kitchen',
             'slug' => 'kitchen',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 17,
@@ -241,17 +232,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Bath-rooms',
             'slug' => 'bathrooms',
-            // 'cover' => 'categories/discount.jpg',
-            'cate_id' => 11,
-            'sector' => 'personal',
-            'order' => 17,
-            'status' => 1
-        ]);
-
-        SubCategory::create([
-            'name' => 'Bed-rooms',
-            'slug' => 'bedrooms',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 17,
@@ -261,7 +242,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Living-rooms',
             'slug' => 'livingrooms',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 17,
@@ -271,7 +252,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Personal Houses',
             'slug' => 'personalhouses',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 17,
@@ -281,7 +262,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Public buildings',
             'slug' => 'publicbuildings',
-            // 'cover' => 'categories/discount.jpg',
+            // 'cover' => 'discount.jpg',
             'cate_id' => 11,
             'sector' => 'personal',
             'order' => 17,
@@ -291,7 +272,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Mixed',
             'slug' => 'mixed',
-            // 'cover' => 'categories/concrete.jpg',
+            // 'cover' => 'concrete.jpg',
             'cate_id' => 11,
             'order' => 1,
             'sector' => 'industrial',
@@ -301,7 +282,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Cement',
             'slug' => 'cement',
-            // 'cover' => 'categories/cement.jpg',
+            // 'cover' => 'cement.jpg',
             'cate_id' => 11,
             'order' => 2,
             'sector' => 'industrial',
@@ -311,7 +292,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Sands',
             'slug' => 'sands',
-            // 'cover' => 'categories/sand.jpg',
+            // 'cover' => 'sand.jpg',
             'cate_id' => 11,
             'order' => 3,
             'sector' => 'industrial',
@@ -321,7 +302,7 @@ class SubcategoriesTableSeeder extends Seeder
         SubCategory::create([
             'name' => 'Blocks',
             'slug' => 'blocks',
-            // 'cover' => 'categories/block.jpg',
+            // 'cover' => 'block.jpg',
             'cate_id' => 11,
             'order' => 4,
             'sector' => 'industrial',
@@ -330,7 +311,7 @@ class SubcategoriesTableSeeder extends Seeder
         
         SubCategory::create([
             'name' => 'Asphalt',
-            // 'cover' => 'categories/',
+            // 'cover' => '',
             'slug' => 'asphalt',
             'cate_id' => 14, // Asphalt
             'order' => 5,
@@ -340,7 +321,7 @@ class SubcategoriesTableSeeder extends Seeder
         
         SubCategory::create([
             'name' => 'Roller Vehicles',
-            // 'cover' => 'categories/',
+            // 'cover' => '',
             'slug' => 'rollervehicles',
             'cate_id' => 15, // rentables
             'order' => 6,
@@ -350,7 +331,7 @@ class SubcategoriesTableSeeder extends Seeder
         
         SubCategory::create([
             'name' => 'Roads',
-            // 'cover' => 'categories/',
+            // 'cover' => '',
             'slug' => 'roads',
             'cate_id' => 22, // usecases
             'order' => 6,
@@ -360,7 +341,7 @@ class SubcategoriesTableSeeder extends Seeder
         
         SubCategory::create([
             'name' => 'Bridges',
-            // 'cover' => 'categories/',
+            // 'cover' => '',
             'slug' => 'bridges',
             'cate_id' => 22, // usecases
             'order' => 6,
