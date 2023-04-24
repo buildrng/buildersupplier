@@ -25,7 +25,7 @@ class BannersTableSeeder extends Seeder
             'store_id' => 1,
             'cover' => 'banners/banner-01.jpg',
             'position' => 0,
-            // 'link' => '',
+            'link' => '/dangote-promo',
             // 'type' => 1,
             'message' => 'Now Selling : Dangote Cement',
             'from' => Carbon::now()->subDays(1),

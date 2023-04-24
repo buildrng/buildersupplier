@@ -24,7 +24,8 @@ class CreateProductsTable extends Migration
             $table->double('original_price',10,2)->nullable();
             $table->double('sell_price',10,2)->nullable();
             $table->double('discount',10,2)->nullable();
-            $table->tinyInteger('kind')->default(0); // 1 = installers required, 0 = no installers required
+            $table->tinyInteger('kind')->default(0); // 1 = installers, 0 = no installers
+            $table->tinyInteger('sample')->default(0); // 1 = has sample, 0 = no sample
             $table->integer('cate_id')->nullable();
             $table->integer('sub_cate_id')->nullable();
             $table->tinyInteger('in_home')->nullable();

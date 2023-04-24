@@ -29,7 +29,8 @@ class ProductsTableSeeder extends Seeder
             'original_price' => 28000.00,
             'sell_price' => 25200.00,
             'discount' => 10.00,
-            'kind' => 0, // 1 = installers required, 0 = no instalers required
+            'kind' => 0, // 1 = installers, 0 = no instalers required
+            'sample' => 1, // 1 = has sample, 0 = no sample
             'cate_id' => 1,
             'sub_cate_id' => 2,
             'in_home' => 1,
@@ -69,7 +70,8 @@ class ProductsTableSeeder extends Seeder
             'original_price' => 35000.00,
             'sell_price' => 32200.00,
             'discount' => 8.00,
-            'kind' => 0, // 1 = installers required, 0 = no instalers required
+            'kind' => 1, // 1 = installers required, 0 = no instalers required
+            'sample' => 0, // 1 = has sample, 0 = no sample
             'cate_id' => 1,
             'sub_cate_id' => 1,
             'in_home' => 1,

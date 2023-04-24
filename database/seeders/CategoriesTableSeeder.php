@@ -32,6 +32,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Scafolds',
             'slug' => 'scafold',
             'sector' => 'personal',
+            'cover' => 'scaffolds.jpg',
             'order' => 2,
             'status' => 1
         ]);
@@ -41,6 +42,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Woods',
             'slug' => 'wood',
             'sector' => 'personal',
+            'cover' => 'woods.jpg',
             'order' => 3,
             'status' => 1
         ]);
@@ -50,7 +52,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Roofings',
             'slug' => 'roofing',
             'sector' => 'personal',
-            // 'cover' => 'roof.jpg',
+            'cover' => 'roofs.jpg',
             'order' => 4,
             'status' => 1
         ]);
@@ -60,6 +62,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Irons',
             'slug' => 'iron-nails-steels',
             'sector' => 'personal',
+            'cover' => 'steels.jpg',
             'order' => 5,
             'status' => 1
         ]);
@@ -69,6 +72,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Ceramics',
             'slug' => 'ceramics',
             'sector' => 'personal',
+            'cover' => 'ceramics.jpg',
             // 'slug' => 'ceramics-stones-asphalts',
             'order' => 6,
             'status' => 1
@@ -79,6 +83,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Stones',
             'slug' => 'stones',
             'sector' => 'personal',
+            'cover' => 'stones.jpg',
             'order' => 7,
             'status' => 1
         ]);
@@ -88,7 +93,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Electricals',
             'slug' => 'electricals-solar',
             'sector' => 'personal',
-            // 'cover' => 'electrical.jpg',
+            'cover' => 'electrical.jpg',
             'order' => 8,
             'status' => 1
         ]);
@@ -98,6 +103,7 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Rentables',
             'slug' => 'rentables',
             'sector' => 'personal',
+            'cover' => 'rentables.jpg',
             'order' => 9,
             'status' => 1
         ]);
@@ -107,6 +113,7 @@ class CategoriesTableSeeder extends Seeder
         //     'name' => 'Discounts',
         //     'slug' => 'discounts',
         //     'sector' => 'personal',
+        //      'cover' => 'discounts.jpg',
         //     'order' => 10,
         //     'status' => 1
         // ]);

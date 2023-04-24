@@ -1,6 +1,6 @@
 // import './bootstrap';
 
-import Alpine from 'alpinejs'
-// import persist from '@alpinejs/persist'
+import 'alpinejs'
 // window.Alpine = Alpine
-Alpine.start();
+// Alpine.start();
+// import persist from '@alpinejs/persist'

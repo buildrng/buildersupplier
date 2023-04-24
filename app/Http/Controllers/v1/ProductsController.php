@@ -30,6 +30,7 @@ use App\Http\Requests\ProductsStoreWitLimitsRequest;
 use App\Http\Requests\ProductsLocationWithLimitRequest;
 use App\Http\Requests\ProductsByZipcodeWithLimitsRequest;
 use App\Http\Requests\ProductsCategoriesWithLimitRequest;
+use App\Models\Brands;
 
 class ProductsController extends Controller
 {
@@ -730,13 +731,14 @@ class ProductsController extends Controller
         }
         $stores = Stores::where(['status' => 1, 'cid' => $cid])->get();
         if (count($stores)) {
-            $storeIds = $stores->pluck('uid')->toArray();
+            // $storeIds = $stores->pluck('uid')->toArray();
             $banners = Banners::where(['status' => 1, 'city_id' => $cid])->whereDate('from', '<=', $today)->whereDate('to', '>=', $today)->get();
             $category = Subcategory::where('status', 1)->where('sector', $sector)->limit(7)->orderBy('order')->get();
             $homeProducts = Products::where(['status' => 1, 'in_home' => 1])->where('rating', '>', 0)->limit(15)->get(); // ->WhereIn('store_id', $storeIds)
             $topProducts = Products::where(['status' => 1, 'in_home' => 1])->orderBy('rating', 'desc')->limit(15)->get(); //->WhereIn('store_id', $storeIds)
             $inOffers = Products::where('status', 1)->where('discount', '>', 0)->orderBy('discount', 'desc')->limit(15)->get();// ->WhereIn('store_id', $storeIds)
             $city = Cities::where('id', $cid)->first();
+            $brands = Brands::where('status', 1)->get();
             foreach ($category as $loop) {
                 $loop->subCates = SubCategory::where(['status' => 1, 'cate_id' => $loop->id])->get();
             }
@@ -748,8 +750,8 @@ class ProductsController extends Controller
                 'topProducts' => $topProducts,
                 'homeProducts' => $homeProducts,
                 'inOffers' => $inOffers,
-                'storeIds' => $storeIds,
                 'cityInfo' => $city,
+                'brands' => $brands,
             ];
             $response = [
                 'data' => $data,

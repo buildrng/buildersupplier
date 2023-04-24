@@ -59,7 +59,7 @@
 	#siteHeader.is-scrolling .innerSticky {
 		@apply shadow-header;
 	}
-	.headerMenu .menuItem > a::before {
+	.headerMenu .menuItem > a:hover::before {
 		@apply absolute end-0 w-0 bg-heading -bottom-4;
 		content: "";
 		height: 3px;
